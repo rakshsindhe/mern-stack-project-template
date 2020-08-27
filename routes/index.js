@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.json({
     "status" :  "ok",
-    "message": "Welcome to the homepage of API route"
+    "message": "INIT API route"
   })
 });
 

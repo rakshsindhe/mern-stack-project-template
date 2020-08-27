@@ -1,18 +1,19 @@
 {
-  "name": "api",
+  "name": "mern-stack-init-template-server",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./server/bin/www",
-    "server":"nodemon ./server/bin/www",
-    "client": "npm start --prefix client",
-    "clientInstall": "npm install --prefix client",
+    "start": "nodemon ./server/bin/www",
+    "build": "npm run build --prefix client",
+    "server": "nodemon ./server/bin/www",
+    "client": "npm run start --prefix client",
+    "clientInstall": "cd client && npm install",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "config": "^3.3.1",
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
@@ -21,7 +22,7 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0"
-  },
-  "proxy": "http://localhost:5001"
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
 }

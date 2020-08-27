@@ -23,3 +23,6 @@
 #SERVER SIDE GITIGNORES
 config/*
 node_modules
+
+#VISUAL STUDIO CONFIGS
+.vscode
