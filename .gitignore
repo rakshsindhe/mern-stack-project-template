@@ -21,5 +21,4 @@
 /client/yarn-error.log*
 
 #SERVER SIDE GITIGNORES
-config/*
 node_modules
